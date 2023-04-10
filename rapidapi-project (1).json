@@ -1,0 +1,3097 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "833cbb20-aa9d-4673-b288-3faa4dd18d97",
+    "description": "",
+    "version": "1.0.0",
+    "contact": {
+      "name": "",
+      "email": "someone@youremail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api-staging-like.mascitra.co.id",
+      "variables": {
+        "server": {
+          "default": "https://api-staging-like.mascitra.co.id"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [],
+        "summary": "get",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI5OTMxODRhZGUwMTU1NjRmNzA4ODljYmE1MjY2OGJhNzQzNjhhMjVlMzc1OGQ4YWY0MGZjODBmMjYwZDJmZTA5ODZlNWYzZTg5MWNmOTM3MiIsImlhdCI6MTY4MDc0NjcxOS41MDYyODM5OTg0ODkzNzk4ODI4MTI1LCJuYmYiOjE2ODA3NDY3MTkuNTA2Mjg5OTU4OTUzODU3NDIxODc1LCJleHAiOjE3MTIzNjkxMTkuNTAzMzgwMDYwMTk1OTIyODUxNTYyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.iEBQc6MOn2ikBS6KQSmsHkxC8Lte5WN9GSep2AO9-CgDdGoPARUmrHu872pKm2k0Ib9I_ygsTvaA3LojbSLwSOXypTGuiLePBEfP_8NM3PmPgqE5DvrH13PAee3kaYIeEyV5yafT9fWCrbdGUspuoMw-1ErqDCZA4CEg5uEuUTYuiZVrapYlVNyhk7aNx8k3Nl7HWhEKW82sJM4MKcvPCDRSC5zYl_2scf_fzJQsisayQ7ZNzPCAL35mjDoiN8KYdC9U7gtshSENL2nIDxyiGwgdjzPJkdRrcjX6y3ZJgDMR2NYS07wiIc7OV2umUFRjUJjpFaT9uo7rBrgXa8yMaKEDL5ktw0s73kQy1xoCzO1bRSDavBueYtVDqD_qn0dSLy1jWqpFJsRRYFkWThlOdTGmThgDANIwBgoDSkxnSQ3l8qd1plyIEvNb2w2VmzN2v_A6hK4-yTF1gDJ0dWBIKlMOcEwyTBjjwQ-1yStUVGten5qiRCPv4W2rJJEaaT8jZPx76Y9GPzJRhFXCuJqn5__AzDx80G9EYGmr7PiUNOyPfIkOFgLIen5OSuvNHgfD89PcICCg7curCnn15dxpVy85_jWEToZMzReIj-azqfxU0-Mpuq-C1-0H3BiCBOhwsu9AEhlAKKKkTprd8px7GTh-vKmN4zBQBMceMK4uuyo",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/"
+      }
+    },
+    "/i/v1/presences/events/detail": {
+      "get": {
+        "tags": [],
+        "summary": "presence-detail",
+        "description": "presence-detail",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1OTlhYzJhM2UxNWVmZGJjYTg3NDVkYzZmNDQ1MzQ1MDE0NDk5ZTM0NDVmMGU1YWNkMDM3OTU1MjcwZWE1MjY1NWJkMTU2ZDdiZTc2NTdiYSIsImlhdCI6MTY4MDc0NDY3Ny4yNTk1MTc5MDgwOTYzMTM0NzY1NjI1LCJuYmYiOjE2ODA3NDQ2NzcuMjU5NTIxMDA3NTM3ODQxNzk2ODc1LCJleHAiOjE3MTIzNjcwNzcuMjU3MDY0MTA0MDgwMjAwMTk1MzEyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.NYPdx_lHATTgQDAs3hhc-hbJCXR9q3vGYUqPV8X8NjRQo2XApH2wzzZKOkIfEnxo_D29k1GHo1nWDKOmlAcLBEIaU7UO-B6_x1VhueVF_vyd_g4TKQDwcVfQaA_k2cVErbvyE-K92VRBxAnICa-bl7sBvrl1sNmHGv7PfY5FRi7sLZiMUjsAdgpyi-44zLJX-iRdT9ty385YRnYMcNxstkQb1PTxkwAOlchIIiTgnDlYaohRhEGC1m6Q8TiEgj59Z-yBvZp7fH29GJqEgtBwZBQu2c5J0kOhRUIM_5PicmhrIi9cCNjP7AUtueGmodUVETXiLaLme-rjJUjQKD0EKxum7uO4b2q7xg7GLOdBCdBlQg4b3Wg2p7aJMDf4DLMalC-iR7IXeMzDZeJ-q5VYht2wOyywwXOCLJ9wJusR2uQjCnUTHrveq-kmdQj7YwGty7o5UIkaqZUVVtWglYA6TgDsvrXqdf50TbYSX7nn4j8-JGzxIyGzJhA9TldCTGUxzdb3O0ONtOrjmWEGIweVD_QMo48l6wSJgu-7_lA-cETswcOckrAcQuixYVSxLL_Q8miIVpPuS-Yt2olZ-5gV9Oe6wGZ7jkeAe0lZGT9qy2x2wMV241NuF6BavUAPzj_DqAAZZ98cALQfPl4cCtVknN_BPh8ae0gj5Jakl1KD2Q4",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/presences/events/detail"
+      }
+    },
+    "/i/v1/family/7/events/updated": {
+      "post": {
+        "tags": [],
+        "summary": "Family-Updated",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nama_keluarga": {
+                    "type": "string",
+                    "example": "septian"
+                  },
+                  "hubungan": {
+                    "type": "string",
+                    "example": "ayah"
+                  }
+                }
+              },
+              "example": "{\"nama_keluarga\":\"septian\",\"hubungan\":\"ayah\"}"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/family/7/events/updated"
+      }
+    },
+    "/i/v1/family/7/events/deleted": {
+      "post": {
+        "tags": [],
+        "summary": "Family-Deleted",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nama_keluarga": {
+                    "type": "string",
+                    "example": "septian"
+                  },
+                  "hubungan": {
+                    "type": "string",
+                    "example": "ayah"
+                  }
+                }
+              },
+              "example": "hubungan=ayah&nama_keluarga=septian"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/family/7/events/deleted"
+      }
+    },
+    "/i/v1/study/events/created": {
+      "post": {
+        "tags": [],
+        "summary": "Study-Created",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name_school": {
+                    "type": "string",
+                    "example": "test"
+                  },
+                  "education_level": {
+                    "type": "string",
+                    "example": "test"
+                  },
+                  "study_program": {
+                    "type": "string",
+                    "example": "test"
+                  },
+                  "entry_year": {
+                    "type": "string",
+                    "example": "123"
+                  },
+                  "graduation_year": {
+                    "type": "string",
+                    "example": "123"
+                  },
+                  "": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "=&education_level=test&entry_year=123&graduation_year=123&name_school=test&study_program=test"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/study/events/created"
+      }
+    },
+    "/i/v1/study/events/detail": {
+      "get": {
+        "tags": [],
+        "summary": "Study-Get",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/study/events/detail"
+      }
+    },
+    "/i/v1/study/2/events/updated": {
+      "post": {
+        "tags": [],
+        "summary": "Study-Updated",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "education_level": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "study_program": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "entry_year": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "graduation_year": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "name_school": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "education_level=&entry_year=&graduation_year=&name_school=&study_program="
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/study/2/events/updated"
+      }
+    },
+    "/i/v1/study/1/events/deleted": {
+      "post": {
+        "tags": [],
+        "summary": "Study-Deleted",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name_school": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "education_level": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "study_program": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "entry_year": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "graduation_year": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "=&education_level=&entry_year=&graduation_year=&name_school=&study_program="
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/study/1/events/deleted"
+      }
+    },
+    "/i/v1/presences/events/deleted": {
+      "post": {
+        "tags": [],
+        "summary": "presence-deleted",
+        "description": "presence-deleted",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiJhMmVjY2IzMjRhMjNjNzcyOGFlNjZiMzYwZGQxYTMyMTYxYTY3ODliN2I3NTYwMjg4MTJhNTRjODI5MGU3OWE2NjQ0N2M5NjU4OTg2ZDRkNyIsImlhdCI6MTY3ODk1NzE2OS44NDc3MDg5NDA1MDU5ODE0NDUzMTI1LCJuYmYiOjE2Nzg5NTcxNjkuODQ3NzEyOTkzNjIxODI2MTcxODc1LCJleHAiOjE3MTA1Nzk1NjkuODQ0OTI3MDcyNTI1MDI0NDE0MDYyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.HHgO4If5sFkdhum5AzaBbpgDzUpwoLaS1b6ssYKL-w28kacfQ2ZPuhla5lTMq--q51KAWGZGMdraB_XO_QEosY7HsYgCZRYOC40TNcPJuutgM6rT25RZLMiUekdMrlS7qPBLqRB1at3BhBOTL9MaSxdPxtqlsqb6sFFGuxzxj8ZGIs2zh2mI7ATMMn2iUVjSXkAr21m4QnblRJR2K_UaTjnBcHe3C1cHQI5RTpBPt2wuIIuj_2AI0qDl3kVFztP3n1rB1-SYCqoHUpGmTMz6AB1GxvuT98z7MPgNBTBPOhteML2F5BqaH6dIHqsI9fToYKJ1CCXT_AKSdMNipzOZsKawBjxX9tgLUgQ4P2BKfH4UqkEd2UqGBB9-pcCoggJAvXHXc8PikvzLW9j5SsbVYNefPyFtJGVWF275NCWewudMWc0WfFKv_iL-2uDIpjMe9YjrGu5QQzq5tg29k_M-dz66F2tgVfCRDsbUVieb3awATmfWbk8kquiW-s7JEBj3pQgCMfuyHLSj-S-DtZWEKeOQbXSmlj0QrGNhNGMId4j8lXSNiO6xcIo5ewhj6qyjL5Or8ur72nSDNz1-2EHINFde4DVQsZNPtN7l-lunQcgcGEQftGRemRl_a35vv8YWkhMER8skz-gbxc78T1vYXgwQr2cx1JiZwRdiLLBr0J8",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "presence-deleted",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "example": "2023-03-23"
+                  }
+                }
+              },
+              "example": "date=2023-03-23"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/presences/events/deleted"
+      }
+    },
+    "/i/v1/presences/events/generate-code-pdf": {
+      "get": {
+        "tags": [],
+        "summary": "Generate-code-pdf",
+        "description": "Generate-code-pdf",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/presences/events/generate-code-pdf"
+      }
+    },
+    "/i/v1/admin/permits/35/events/change_status": {
+      "post": {
+        "tags": [],
+        "summary": "permit-change-status",
+        "description": "permit-change-status",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "permit-change-status",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_id": {
+                    "type": "string",
+                    "example": "400"
+                  },
+                  "reject_notes": {
+                    "type": "string",
+                    "example": "OO"
+                  },
+                  "status": {
+                    "type": "string",
+                    "example": "1"
+                  }
+                }
+              },
+              "example": "reject_notes=OO&status=1&user_id=400"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/admin/permits/35/events/change_status"
+      }
+    },
+    "/i/v1/permits/3/events/deleted": {
+      "post": {
+        "tags": [],
+        "summary": "permit-deleted",
+        "description": "permit-deleted",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiJlNDU5NjIyOTk2MWZhM2NiYTcwZGRkYjQ3YzBiYjQwNGFlYzhkMmM2YWYyNDdhNWY1ZDkzNjNlMmIxMzhkMGFmZDA3YjliNzYxMTNlYTRjZCIsImlhdCI6MTY3ODkzMDMyNC4yMjYyNjkwMDY3MjkxMjU5NzY1NjI1LCJuYmYiOjE2Nzg5MzAzMjQuMjI2MjczMDU5ODQ0OTcwNzAzMTI1LCJleHAiOjE3MTA1NTI3MjQuMjIyOTc2OTIyOTg4ODkxNjAxNTYyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.SSFcgHnJ4ygjL6e2LYrnZtXEQ5V-6RI0ZBmLllIMzdd-BiFfg4O2wYFl8XCngJC5vxVD8BFw_EAKio5lYUallLKol5LoJH3AeD3D1UIt8HBUSNTmaAZ9iHZtKYdFosHT1Lzre2zMqS0wsSNDJ3iyQfifxZ-9xiQGhwsiAFkGEXgqAoGoTcJQRBRVnubwXw-8Ipktvuw_3QNpVEdUdWDuVCMtwrz7GkYyZipswBgezULlEFY1SPmqK5ytXEYEgP6Wumg7e_4MvMpqz1w15HozUS4cSBUtLpEt6tQu_U5_i6KykWb30vccCwUQt5zlziB1PniRYM_ODiWVPTFw4Rz_rbbF73H_DsnKZ54NrOdWRzLcB3-qTwVJniNeAOn_84kvIH4bILii9vRarfQWkJ11VnrLx6Vt3lA2b0wuLZtxiN8AuNfizme3KfdA9GN331ll6Q95CQN7LPfGjOJgPiEH54GGnii2WsaURzwrzg-yLsNGWGilJCKDIUYuDwcyc7xXj9TOTlaGYjF_ZUM9ivmJDZuc_qnHLDfPzm6iS4cOPKUu1ev7cuflvRa6P1BfHW0Xc4Eni2Oogwo3eYvNx7orkUhbIS-ufp9heLcAaLGlbyVKsUh_WAc9a2xLSYyq-Qi0dRuJ7Qe-NSeCImboc1bxsdg20zdNUHgg5njMrEKotks",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "permit-deleted",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "P1"
+                  },
+                  "start_date": {
+                    "type": "string",
+                    "example": "2022-10-09"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": " sakit"
+                  },
+                  "end_date": {
+                    "type": "string",
+                    "example": "2022-10-10"
+                  },
+                  "necessity": {
+                    "type": "string",
+                    "example": "test cuti tahunan"
+                  },
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "description= sakit&end_date=2022-10-10&file=&necessity=test cuti tahunan&start_date=2022-10-09&type=P1"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/permits/3/events/deleted"
+      }
+    },
+    "/i/v1/permits/permit-type": {
+      "get": {
+        "tags": [],
+        "summary": "permitType",
+        "description": "permitType",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/permits/permit-type"
+      }
+    },
+    "/i/v1/family/events/detail": {
+      "get": {
+        "tags": [],
+        "summary": "Family-Get",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "text/html": {
+                "example": {
+                  "value": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n         \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>404 - Not Found</title>\n</head>\n<body>\n<h1>404 - Not Found</h1>\n<script type=\"text/javascript\" src=\"//wpc.75674.betacdn.net/0075674/www/ec_tpm_bcon.js\"></script>\n</body>\n</html>\n"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/family/events/detail"
+      }
+    },
+    "/i/v1/permits/27/events/info_updated": {
+      "post": {
+        "tags": [],
+        "summary": "permit-updated",
+        "description": "permit-updated",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiJlYjZjYTBjNTIxZjViZDE1OTA4NTg0Yzc3ZDRiMDZkNTk4MDE4OWQ3YjdkYWQzNzRkN2FjN2MxYjAwNzRjZTU3ZTFjZjFkNDdkYzM5ZDJiNSIsImlhdCI6MTY3ODM0NjgzMy4wNDY5NTcwMTU5OTEyMTA5Mzc1LCJuYmYiOjE2NzgzNDY4MzMuMDQ2OTYxMDY5MTA3MDU1NjY0MDYyNSwiZXhwIjoxNzA5OTY5MjMzLjA0NDg3MjA0NTUxNjk2Nzc3MzQzNzUsInN1YiI6IjQwMCIsInNjb3BlcyI6W119.aNRHwLNzDmAQij_DxVwfJqa5ejJaEPGpC1HUSVZ19KcVdx7kpZdJIaRSMsO4iu1IjUScKGYxI2suQO59Jnd6KXh5CZZQekX0Zk-EQSIX7JX5QRKfMI-D9-nPuVRku8_4seRb-NnlyBiLer62cS6l7090aXj1jJpEOLTmDZQuhFIq_0G-XqXMot3pehltzwgiu0ynmVZHkD6EJhwRPku7oW5XGcG_iHUA20cJGw_MnIN3fuz1QWA7ezrqt8HHcAY6FkREMEyiDY5d08pV-W8kwI60I48S4LkRh-PONbPAo89cUWZCW4IPqRecpUqPUuqJwVqr092YyMh4fc1J3VTldqrGY1udRuCbVT7aZFp8JMrC6XF20MfKmrOi0g3i6ZXYriJzVwXGDU32dyNeqwEB-EQymBz3KaLlqnvzmSDwOjNCBMMbnxkyYCJT_hcMq86mRBvemDm1zwecB1YMXcy563j6meRHaZKZMhPdsmtAvPdBTpAkeOTbBeGJrv6GsuB9NpX7RhneDDyJEtByr0Jv_mJP0byZeVKbsoy3SdLGuZPl8icJBF9bJBTHv3jLIQBC6NclEEtCpI_F2wEBzarWsIeJU7kmLsi-d5SmHZdNgO4KlEaGjGXqhrMV6Q2aSrKhmZk96uOpKIKZAUCck9AoT1EsoQGaWShQpEUDrC31KVI",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "permit-updated",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "necessity": {
+                    "type": "string",
+                    "example": "test cuti tahunan"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": " sakit"
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "P1"
+                  },
+                  "start_date": {
+                    "type": "string",
+                    "example": "2022-10-09"
+                  },
+                  "end_date": {
+                    "type": "string",
+                    "example": "2022-10-10"
+                  }
+                }
+              },
+              "example": "description= sakit&end_date=2022-10-10&file=&necessity=test cuti tahunan&start_date=2022-10-09&type=P1"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/permits/27/events/info_updated"
+      }
+    },
+    "/i/v1/dailies/events/created": {
+      "post": {
+        "tags": [],
+        "summary": "daily-created",
+        "description": "daily-created",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI5OTMxODRhZGUwMTU1NjRmNzA4ODljYmE1MjY2OGJhNzQzNjhhMjVlMzc1OGQ4YWY0MGZjODBmMjYwZDJmZTA5ODZlNWYzZTg5MWNmOTM3MiIsImlhdCI6MTY4MDc0NjcxOS41MDYyODM5OTg0ODkzNzk4ODI4MTI1LCJuYmYiOjE2ODA3NDY3MTkuNTA2Mjg5OTU4OTUzODU3NDIxODc1LCJleHAiOjE3MTIzNjkxMTkuNTAzMzgwMDYwMTk1OTIyODUxNTYyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.iEBQc6MOn2ikBS6KQSmsHkxC8Lte5WN9GSep2AO9-CgDdGoPARUmrHu872pKm2k0Ib9I_ygsTvaA3LojbSLwSOXypTGuiLePBEfP_8NM3PmPgqE5DvrH13PAee3kaYIeEyV5yafT9fWCrbdGUspuoMw-1ErqDCZA4CEg5uEuUTYuiZVrapYlVNyhk7aNx8k3Nl7HWhEKW82sJM4MKcvPCDRSC5zYl_2scf_fzJQsisayQ7ZNzPCAL35mjDoiN8KYdC9U7gtshSENL2nIDxyiGwgdjzPJkdRrcjX6y3ZJgDMR2NYS07wiIc7OV2umUFRjUJjpFaT9uo7rBrgXa8yMaKEDL5ktw0s73kQy1xoCzO1bRSDavBueYtVDqD_qn0dSLy1jWqpFJsRRYFkWThlOdTGmThgDANIwBgoDSkxnSQ3l8qd1plyIEvNb2w2VmzN2v_A6hK4-yTF1gDJ0dWBIKlMOcEwyTBjjwQ-1yStUVGten5qiRCPv4W2rJJEaaT8jZPx76Y9GPzJRhFXCuJqn5__AzDx80G9EYGmr7PiUNOyPfIkOFgLIen5OSuvNHgfD89PcICCg7curCnn15dxpVy85_jWEToZMzReIj-azqfxU0-Mpuq-C1-0H3BiCBOhwsu9AEhlAKKKkTprd8px7GTh-vKmN4zBQBMceMK4uuyo",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "daily-created",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "example": "2023-03-17"
+                  },
+                  "activity_description": {
+                    "type": "string",
+                    "example": "required"
+                  },
+                  "activity_realization": {
+                    "type": "string",
+                    "example": "required"
+                  },
+                  "activity_target": {
+                    "type": "string",
+                    "example": "required"
+                  }
+                }
+              },
+              "example": "activity_description=required&activity_realization=required&activity_target=required&date=2023-03-17"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/dailies/events/created"
+      }
+    },
+    "/i/v1/staff/education/events/info_type": {
+      "get": {
+        "tags": [],
+        "summary": "staff-educationType",
+        "description": "staff-educationType",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI5OTMxODRhZGUwMTU1NjRmNzA4ODljYmE1MjY2OGJhNzQzNjhhMjVlMzc1OGQ4YWY0MGZjODBmMjYwZDJmZTA5ODZlNWYzZTg5MWNmOTM3MiIsImlhdCI6MTY4MDc0NjcxOS41MDYyODM5OTg0ODkzNzk4ODI4MTI1LCJuYmYiOjE2ODA3NDY3MTkuNTA2Mjg5OTU4OTUzODU3NDIxODc1LCJleHAiOjE3MTIzNjkxMTkuNTAzMzgwMDYwMTk1OTIyODUxNTYyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.iEBQc6MOn2ikBS6KQSmsHkxC8Lte5WN9GSep2AO9-CgDdGoPARUmrHu872pKm2k0Ib9I_ygsTvaA3LojbSLwSOXypTGuiLePBEfP_8NM3PmPgqE5DvrH13PAee3kaYIeEyV5yafT9fWCrbdGUspuoMw-1ErqDCZA4CEg5uEuUTYuiZVrapYlVNyhk7aNx8k3Nl7HWhEKW82sJM4MKcvPCDRSC5zYl_2scf_fzJQsisayQ7ZNzPCAL35mjDoiN8KYdC9U7gtshSENL2nIDxyiGwgdjzPJkdRrcjX6y3ZJgDMR2NYS07wiIc7OV2umUFRjUJjpFaT9uo7rBrgXa8yMaKEDL5ktw0s73kQy1xoCzO1bRSDavBueYtVDqD_qn0dSLy1jWqpFJsRRYFkWThlOdTGmThgDANIwBgoDSkxnSQ3l8qd1plyIEvNb2w2VmzN2v_A6hK4-yTF1gDJ0dWBIKlMOcEwyTBjjwQ-1yStUVGten5qiRCPv4W2rJJEaaT8jZPx76Y9GPzJRhFXCuJqn5__AzDx80G9EYGmr7PiUNOyPfIkOFgLIen5OSuvNHgfD89PcICCg7curCnn15dxpVy85_jWEToZMzReIj-azqfxU0-Mpuq-C1-0H3BiCBOhwsu9AEhlAKKKkTprd8px7GTh-vKmN4zBQBMceMK4uuyo",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/staff/education/events/info_type"
+      }
+    },
+    "/i/v1/staff/education/events/created": {
+      "post": {
+        "tags": [],
+        "summary": "staff-education-created",
+        "description": "staff-education-created",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "staff-education-created",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "to_year": {
+                    "type": "string",
+                    "example": "2015"
+                  },
+                  "education_type": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "education_major": {
+                    "type": "string",
+                    "example": "Rekayasa Perangkat Lunak"
+                  },
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "education_name": {
+                    "type": "string",
+                    "example": "SMK TES 1"
+                  },
+                  "from_year": {
+                    "type": "string",
+                    "example": "2012"
+                  }
+                }
+              },
+              "example": "education_major=Rekayasa Perangkat Lunak&education_name=SMK TES 1&education_type=&file=&from_year=2012&to_year=2015"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/staff/education/events/created"
+      }
+    },
+    "/i/v1/admin/staff/events/created": {
+      "post": {
+        "tags": [],
+        "summary": "staff-created(admin)",
+        "description": "staff-created(admin)",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "staff-created(admin)",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "work_start": {
+                    "type": "string",
+                    "example": "2023-02-23"
+                  },
+                  "appointment": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "role": {
+                    "type": "string",
+                    "example": "PG"
+                  },
+                  "color": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "religion_id": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "tenure_year": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "Karyawan Tetap"
+                  },
+                  "id_card": {
+                    "type": "string",
+                    "example": "12345678910"
+                  },
+                  "marital_status": {
+                    "type": "string",
+                    "example": "SINGLE"
+                  },
+                  "hair": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "address": {
+                    "type": "string",
+                    "example": "Los Angeles"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "yusfiadil@gmail.com"
+                  },
+                  "blood_type": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "birthplace": {
+                    "type": "string",
+                    "example": "Jember"
+                  },
+                  "face_shape": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "hobby": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "disability": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "phone": {
+                    "type": "string",
+                    "example": "082257844809"
+                  },
+                  "status": {
+                    "type": "string",
+                    "example": "A"
+                  },
+                  "npwp": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "id_bpjs": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "tenure_month": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "gender": {
+                    "type": "string",
+                    "example": "L"
+                  },
+                  "weight": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "birthday": {
+                    "type": "string",
+                    "example": "1997-11-10"
+                  },
+                  "information": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "thew": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Yusfi Adil"
+                  },
+                  "height": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "address=Los Angeles&appointment= &birthday=1997-11-10&birthplace=Jember&blood_type= &color= &disability= &email=yusfiadil@gmail.com&face_shape= &file=&gender=L&hair= &height=&hobby= &id_bpjs= &id_card=12345678910&information=&marital_status=SINGLE&name=Yusfi Adil&npwp= &phone=082257844809&religion_id=1&role=PG&status=A&tenure_month= &tenure_year= &thew= &type=Karyawan Tetap&weight=&work_start=2023-02-23"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/admin/staff/events/created"
+      }
+    },
+    "/i/v1/admin/staff/events/detail": {
+      "get": {
+        "tags": [],
+        "summary": "Staff-detail(Admin)",
+        "description": "Staff-detail (Admin)",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/admin/staff/events/detail"
+      }
+    },
+    "/i/v1/users-list-select": {
+      "get": {
+        "tags": [],
+        "summary": "user-list",
+        "description": "user-list",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/users-list-select"
+      }
+    },
+    "/i/v1/admin/staff/400/events/info_updated": {
+      "post": {
+        "tags": [],
+        "summary": "staff-updated(admin)",
+        "description": "staff-updated(admin)",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "oauth2_auth": [
+              ""
+            ]
+          }
+        ],
+        "requestBody": {
+          "description": "staff-updated(admin)",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "npwp": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "hair": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "role": {
+                    "type": "string",
+                    "example": "PG"
+                  },
+                  "appointment": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "information": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "disability": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "status": {
+                    "type": "string",
+                    "example": "A"
+                  },
+                  "birthday": {
+                    "type": "string",
+                    "example": "1997-11-10"
+                  },
+                  "work_start": {
+                    "type": "string",
+                    "example": "2023-02-23"
+                  },
+                  "color": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "weight": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "phone": {
+                    "type": "string",
+                    "example": "082257844809"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Yusfi Adil"
+                  },
+                  "height": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "blood_type": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "Karyawan Tetap"
+                  },
+                  "birthplace": {
+                    "type": "string",
+                    "example": "Jember"
+                  },
+                  "marital_status": {
+                    "type": "string",
+                    "example": "SINGLE"
+                  },
+                  "thew": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "id_card": {
+                    "type": "string",
+                    "example": "12345678910"
+                  },
+                  "face_shape": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "hobby": {
+                    "type": "string",
+                    "example": " Mancing"
+                  },
+                  "tenure_month": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "address": {
+                    "type": "string",
+                    "example": "Los Angeles"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "test@gmail.com"
+                  },
+                  "gender": {
+                    "type": "string",
+                    "example": "L"
+                  },
+                  "id_bpjs": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "tenure_year": {
+                    "type": "string",
+                    "example": " "
+                  },
+                  "religion_id": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "address=Los Angeles&appointment= &birthday=1997-11-10&birthplace=Jember&blood_type= &color= &disability= &email=test@gmail.com&face_shape= &file=&gender=L&hair= &height=&hobby= Mancing&id_bpjs= &id_card=12345678910&information=&marital_status=SINGLE&name=Yusfi Adil&npwp= &phone=082257844809&religion_id=1&role=PG&status=A&tenure_month= &tenure_year= &thew= &type=Karyawan Tetap&weight=&work_start=2023-02-23"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/admin/staff/400/events/info_updated"
+      }
+    },
+    "/i/v1/account": {
+      "get": {
+        "tags": [],
+        "summary": "account",
+        "description": "account",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiJmNTNiNWYxZTRjNjEyOWU1MTc3OTJhOGVkMjZiYzg3YmIwZmE1NWM1NDFiYTVhMjZjODBlYThkMjk1OGZkNTRlYTgxMmM2YThkMGYxYTRiMyIsImlhdCI6MTY3NzgzMTc5NC41OTQxNjI5NDA5NzkwMDM5MDYyNSwibmJmIjoxNjc3ODMxNzk0LjU5NDE2Njk5NDA5NDg0ODYzMjgxMjUsImV4cCI6MTcwOTQ1NDE5NC41OTIwMzc5MTYxODM0NzE2Nzk2ODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.esVixnBVTt55wjnWPag-OFnZFO3YvtRaGwwJxX1qr_oUR-LaBwsENGqoc1LwbT7Zs8BJ_OfouSWrrcukGX_bLCuWLRr0ot1lGDsnegEDjtgi7AlQQTFZIXeyHG9FSIEwdsw6tol8PMtg_QY0btHAMjmyBuxseqU50f9-UhOpJXDTAtdwT8U8QPLCWGZHUXljwNufoRex2Ldn1EoeBWlJd5tZXLQUrht3QF327Lhynzi5DkNXjdNPCs9fnMuYDBzC9AQjoviynQwYGqjCnXrAibRbuWNeBzhNaVOGduz1kxO7ad1CIsiO32tKUX2nJVPg4iW3GMyrB782cQD06sOMUa3ORj79REVBQr0MgJo65x3MVWf3Mi-4C97rLtCCCCn9FC9H3Dt0zovcTssY63p-MBKW_ef_vLXvIic1GA3-R03Qu08taZ3c60O_SA8E8OkcyAMLhyWkdLovVQzj-88CwVW0DtXB5ggHEIigfwL8lW8uT0DB7qrb_XAg9b1o747jUxKfkme9TQK5DPkKPt4vQjOGXUcOx2QzyjNVY7TKTp64R1Oq2icTlA0lYjmZawEs33k9Wc_srGcY4VyaQiem537SFCowa6G-y2zcOoYc3c3YxR0I5HmXqMj8ya0Mc-KVazTOGUhbjURAzTUCtBIzKOSiYYDFVrmkOcMMh0KNXdA",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/account"
+      }
+    },
+    "/i/v1/signin/devices/events/tokenUpdate": {
+      "post": {
+        "tags": [],
+        "summary": "UpdateDeviceToken",
+        "description": "UpdateDeviceToken",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "UpdateDeviceToken",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "device_token": {
+                    "type": "string",
+                    "example": "asasasa"
+                  }
+                }
+              },
+              "example": "device_token=asasasa"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/signin/devices/events/tokenUpdate"
+      }
+    },
+    "/i/v1/presences/events/preview-pdf": {
+      "get": {
+        "tags": [],
+        "summary": "preview-pdf",
+        "description": "preview-pdf",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "pdfcode",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "NzllS0I1ZGtZbE1QZitNdHJyVW5aQT09",
+              "description": ""
+            }
+          },
+          {
+            "name": "year",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2023",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/presences/events/preview-pdf"
+      }
+    },
+    "/i/v1/permits/events/detail": {
+      "get": {
+        "tags": [],
+        "summary": "permit-detail",
+        "description": "permit-detail",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiIwNWY1NjE5Mzk1MjA5M2MzODlhYzJkODYxYmNhNDZmZmEyMGQ3OWY1OWQ1NTJiNjI3NWQzNjllNDYyMmEyYWE3MjRjZGYxZWIxYjMyMGIxNiIsImlhdCI6MTY4MTEwODE2MS4xOTM4NjUwNjA4MDYyNzQ0MTQwNjI1LCJuYmYiOjE2ODExMDgxNjEuMTkzODcxMDIxMjcwNzUxOTUzMTI1LCJleHAiOjE3MTI3MzA1NjEuMTkwODkwMDczNzc2MjQ1MTE3MTg3NSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.uvwmvacTTKEWlFoBhMU3HJYIkzs9mq62NF03qNHddoAwdQS8pTY1LC0M-7-z3m_e9OrGhXDHwG7nf1O85hbxabfBWGqpZtH5r3SVDFQYhCF9L4kIAttXCL3i_32SETYvErsIN7UTRaBu5NMwTMJItwkbOpTI_ovJuvlomI85xgY77VS03qdkZPvB0f5OjmnqRGDQBrfd1iGR70mWwSHt-EnRZ9-6lDoHvVZUbVxeYSwNk4zYGlrWDHwaP3Tn2j9rcXvceKolmJdrC8Uv0gq4y1JWJ62BeUooHe1lBzQiXg6eUd7XRovcMoXSNkrK0yGzaJyslgFTWmk0FUn_WIDdtzom7Blm0-ISQngzFEJBhtMnvvt1bxuOpT0AHi-sHwASQCf2d8XBGOk67yC4KL8ofEHhD238EecL1107ZvIt9yFsD3lGhTk631sQ8uj0cfRxA2WAHdnoKvAypmCgDIg3vENFHB15LaIHfDrZIG_fzJ88pHjsUoqXrgCzJ6KURXPc42sZE698PRHkGsOJEU8ViNkiZQ6RO5PxIvV4APO6yfasXQ76EosdiXGrwc6QCIXazVASJfbx5yvS-UCKMr1N4u5I7L2thtuJ7kHnL418jnnKhNE_aPFvt1Z8cMO-YVmnD4c1Vdlnm4TRSkqiNpbauPYgzqPgNiebmvcHOxSmWvE",
+              "description": ""
+            }
+          },
+          {
+            "name": "start_date",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2023-10-14",
+              "description": ""
+            }
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2023-10-14",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/permits/events/detail"
+      }
+    },
+    "/i/v1/admin/presences/events/detail": {
+      "get": {
+        "tags": [],
+        "summary": "presence-detail(ADMIN)",
+        "description": "presence-detail (ADMIN)",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiJiMDA1ZDY1ZTYzYmQ3M2ViZmZkNGY1MmQxY2ViNzk1Mzk0YzMwNmQzNWUyMmFmZDYyMDE1ZTU4ZDYxOThmY2JiYzUxNGY0OTg2MjVlZTVmYyIsImlhdCI6MTY3NzgzMjI4NC4yODU3OTQ5NzMzNzM0MTMwODU5Mzc1LCJuYmYiOjE2Nzc4MzIyODQuMjg1Nzk5MDI2NDg5MjU3ODEyNSwiZXhwIjoxNzA5NDU0Njg0LjI4Mzc0NjAwNDEwNDYxNDI1NzgxMjUsInN1YiI6IjQwMCIsInNjb3BlcyI6W119.oNVkjcWQ7XAJjFULPEphRg0_Kkr0lwV9RAB68wnaYea3ZVKJ9IXrUnONemqdmpLB9X9s1x8ep97fNob371GNJY0aCXmf2Rai_AN7N2XLzz9vtWSl1g0pcJ9eCaspL6QWT_qrheExeb4guVBMJxI67UOVRI9UPsIu9ma5MdElohniP1E-BnsH-Mo96jpR1fVdVY-PFBCX7jHBS1Ric1WgDLOFjiUqw-4YjaiuOc48eApDI2vLjse7mlJhTK2aJ5C5T3IsOSCHZbJHr08yDKaAtage6Z2-gNoYY24wxYmFdv-yrzL221aMPnJcSqpyHSRSTq4y_Q4lpnx_Te6cZiw6oa7tKwRPp9KkgRUGN0AXq6hP0AxMnbS-pCIcufmA4izyB23Y61b-q8BUuPDxTLN0kDsPOdxOl3AFpjKFomNDhSGoOiQo5pAJ2KqUvsF2X_9n54nfZVWdCQ-Eyry74Wf_ax3KudUGww3ogC8oS_vG18tS4Dl5IKYxXwzIybWnQdUp3iFyLV9--5FzTMXJ26BRVsyP3TQUJAtMus-rD3lhcoGkejOo1Y0IyfpSgzmTvMT1mfxLvajs2gSYlKFLXNTWOWDN_jtitb7u15knuvClRWkvvnOaV-GLEIxeYkbhyP2-aji2wrdBbwkiZt4JYPArxYwyvwzrpZvRpYCzo1i5ysI",
+              "description": ""
+            }
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2023-02-14",
+              "description": ""
+            }
+          },
+          {
+            "name": "start_date",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2022-11-08",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "operationId": "/i/v1/admin/presences/events/detail"
+      }
+    },
+    "/i/v1/family/events/update": {
+      "post": {
+        "tags": [],
+        "summary": "Family-Created",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Hos",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "text/html": {
+                "example": {
+                  "value": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>Not Found</title>\n\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Nunito&display=swap\" rel=\"stylesheet\">\n<style>\n            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes  spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes  ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes  pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes  bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\\:rounded-lg{border-radius:.5rem}.sm\\:block{display:block}.sm\\:items-center{align-items:center}.sm\\:justify-start{justify-content:flex-start}.sm\\:justify-between{justify-content:space-between}.sm\\:h-20{height:5rem}.sm\\:ml-0{margin-left:0}.sm\\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\\:pt-0{padding-top:0}.sm\\:text-left{text-align:left}.sm\\:text-right{text-align:right}}@media (min-width:768px){.md\\:border-t-0{border-top-width:0}.md\\:border-l{border-left-width:1px}.md\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}\n        </style>\n<style>\n            body {\n                font-family: 'Nunito', sans-serif;\n            }\n        </style>\n</head>\n<body class=\"antialiased\">\n<div class=\"relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0\">\n<div class=\"max-w-xl mx-auto sm:px-6 lg:px-8\">\n<div class=\"flex items-center pt-8 sm:justify-start sm:pt-0\">\n<div class=\"px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider\">\n404 </div>\n<div class=\"ml-4 text-lg text-gray-500 uppercase tracking-wider\">\nNot Found </div>\n</div>\n</div>\n</div>\n</body>\n</html>\n"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nama_keluarga": {
+                    "type": "string",
+                    "example": "septian"
+                  },
+                  "hubungan": {
+                    "type": "string",
+                    "example": "ayah"
+                  }
+                }
+              },
+              "example": "hubungan=ayah&nama_keluarga=septian"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/family/events/update"
+      }
+    },
+    "/i/v1/family/events/upload_file": {
+      "post": {
+        "tags": [],
+        "summary": "Family-Upload File",
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1NGIwNjU5MjQ2NzM0ZjExMDBjNGVkOWI4Y2Q1NDVkZTA2ZmU4NTY4OTkwYTI2YTNhZTZmMjlmNmY2ZTcyYjYxYjY3YmM3MjAzYWQwN2M0YyIsImlhdCI6MTY3ODA4NTA5NS4xNTU2MzEwNjUzNjg2NTIzNDM3NSwibmJmIjoxNjc4MDg1MDk1LjE1NTYzMzkyNjM5MTYwMTU2MjUsImV4cCI6MTcwOTcwNzQ5NS4xNTM3NTM5OTU4OTUzODU3NDIxODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.fJv0hYnfAxGNFypmCUwf3TX-mrgiulY7S50KWbt8VMVzctwyR6vsWDnl7VzBZHbSrbA8EYWVs7hwfXIxBt9fvTs2a61oIIHVX2zn3H7kLoqThFx0wnboZ47gVDKK9NdbSUY8c1L2jhR_OvuHCfmHg4UCKmBLeuZ5OUSLdVr2HA2D9YuVkLOP4B5dHjHTzWbD0xQSbYZFm-06OC3p_s-OxwNhJ1N3J3g7bGbCI6T1ijV70GzmofKc-OM6bGjc7jY6lHaw3sQwqWeC7zbHbMk6o1icSttlJvu77m5d6DVEbtg4xtK6UMzQXJDHeiPcH7a0aWYqMbvXqZVnT_xZF7yRhgcR9FjiO2dTepZpEeSUJhG3EFgA7_lVzvW51Gg9NskV2HDMjG691cL6GiCjdHt0ifAEqeMR26hytTszFf2kOqyPZwLzOWoc7pTJRDtKMi4Cdt1cxNBNfPpAnYklr1GRJgg-OhTt2xNwGF-_SY5mu62-J10yE6RLkOSiXYLch9FYfhN6pcnFsi1bPCWc4QMKZR4XmLZT_DFeUfUeDY8KJwH59X3gdMxUhYKSjvBmMRKmE69fHrEBNgVSMUFWzSbMTl3ohyGlTq_1MRCZNjvdzhOkvRQSfIGEG-ptJExg0mDm_lXEYxAapKy3zmp2AnyGzCFmsRHwSANGei1L7L8qjNg",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file_kk_ktp": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/family/events/upload_file"
+      }
+    },
+    "/i/v1/dailies/events/detail": {
+      "post": {
+        "tags": [],
+        "summary": "daily-detail",
+        "description": "daily-detail",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI5OTMxODRhZGUwMTU1NjRmNzA4ODljYmE1MjY2OGJhNzQzNjhhMjVlMzc1OGQ4YWY0MGZjODBmMjYwZDJmZTA5ODZlNWYzZTg5MWNmOTM3MiIsImlhdCI6MTY4MDc0NjcxOS41MDYyODM5OTg0ODkzNzk4ODI4MTI1LCJuYmYiOjE2ODA3NDY3MTkuNTA2Mjg5OTU4OTUzODU3NDIxODc1LCJleHAiOjE3MTIzNjkxMTkuNTAzMzgwMDYwMTk1OTIyODUxNTYyNSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.iEBQc6MOn2ikBS6KQSmsHkxC8Lte5WN9GSep2AO9-CgDdGoPARUmrHu872pKm2k0Ib9I_ygsTvaA3LojbSLwSOXypTGuiLePBEfP_8NM3PmPgqE5DvrH13PAee3kaYIeEyV5yafT9fWCrbdGUspuoMw-1ErqDCZA4CEg5uEuUTYuiZVrapYlVNyhk7aNx8k3Nl7HWhEKW82sJM4MKcvPCDRSC5zYl_2scf_fzJQsisayQ7ZNzPCAL35mjDoiN8KYdC9U7gtshSENL2nIDxyiGwgdjzPJkdRrcjX6y3ZJgDMR2NYS07wiIc7OV2umUFRjUJjpFaT9uo7rBrgXa8yMaKEDL5ktw0s73kQy1xoCzO1bRSDavBueYtVDqD_qn0dSLy1jWqpFJsRRYFkWThlOdTGmThgDANIwBgoDSkxnSQ3l8qd1plyIEvNb2w2VmzN2v_A6hK4-yTF1gDJ0dWBIKlMOcEwyTBjjwQ-1yStUVGten5qiRCPv4W2rJJEaaT8jZPx76Y9GPzJRhFXCuJqn5__AzDx80G9EYGmr7PiUNOyPfIkOFgLIen5OSuvNHgfD89PcICCg7curCnn15dxpVy85_jWEToZMzReIj-azqfxU0-Mpuq-C1-0H3BiCBOhwsu9AEhlAKKKkTprd8px7GTh-vKmN4zBQBMceMK4uuyo",
+              "description": ""
+            }
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2023-04-06",
+              "description": ""
+            }
+          },
+          {
+            "name": "start_date",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2023-04-06",
+              "description": ""
+            }
+          },
+          {
+            "name": "",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "integer",
+                          "format": "int64",
+                          "example": 200
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "success"
+                        },
+                        "message": {
+                          "type": "string",
+                          "example": "Berhasil Memuat data"
+                        }
+                      }
+                    },
+                    "data": {
+                      "type": "object",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string"
+                          },
+                          "activity_description": {
+                            "type": "string"
+                          },
+                          "activity_target": {
+                            "type": "string"
+                          },
+                          "activity_realization": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "totalRecords": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {
+              "access-control-allow-origin": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "cache-control": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "no-cache, private"
+                }
+              },
+              "connection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "content-type": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              },
+              "date": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Wed, 29 Mar 2023 07:43:04 GMT"
+                }
+              },
+              "strict-transport-security": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains; preload"
+                }
+              },
+              "transfer-encoding": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              },
+              "vary": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Accept-Encoding"
+                }
+              },
+              "x-content-type-options": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "x-ratelimit-limit": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "60"
+                }
+              },
+              "x-ratelimit-remaining": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "59"
+                }
+              },
+              "x-server-powered-by": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Engintron"
+                }
+              },
+              "x-xss-protection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "1; mode=block"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "daily-detail",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object"
+              },
+              "example": ""
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/dailies/events/detail"
+      }
+    },
+    "/i/v1/presences/events/created/": {
+      "post": {
+        "tags": [],
+        "summary": "presence-created",
+        "description": "presence-created",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "application/json",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiJiMDA1ZDY1ZTYzYmQ3M2ViZmZkNGY1MmQxY2ViNzk1Mzk0YzMwNmQzNWUyMmFmZDYyMDE1ZTU4ZDYxOThmY2JiYzUxNGY0OTg2MjVlZTVmYyIsImlhdCI6MTY3NzgzMjI4NC4yODU3OTQ5NzMzNzM0MTMwODU5Mzc1LCJuYmYiOjE2Nzc4MzIyODQuMjg1Nzk5MDI2NDg5MjU3ODEyNSwiZXhwIjoxNzA5NDU0Njg0LjI4Mzc0NjAwNDEwNDYxNDI1NzgxMjUsInN1YiI6IjQwMCIsInNjb3BlcyI6W119.oNVkjcWQ7XAJjFULPEphRg0_Kkr0lwV9RAB68wnaYea3ZVKJ9IXrUnONemqdmpLB9X9s1x8ep97fNob371GNJY0aCXmf2Rai_AN7N2XLzz9vtWSl1g0pcJ9eCaspL6QWT_qrheExeb4guVBMJxI67UOVRI9UPsIu9ma5MdElohniP1E-BnsH-Mo96jpR1fVdVY-PFBCX7jHBS1Ric1WgDLOFjiUqw-4YjaiuOc48eApDI2vLjse7mlJhTK2aJ5C5T3IsOSCHZbJHr08yDKaAtage6Z2-gNoYY24wxYmFdv-yrzL221aMPnJcSqpyHSRSTq4y_Q4lpnx_Te6cZiw6oa7tKwRPp9KkgRUGN0AXq6hP0AxMnbS-pCIcufmA4izyB23Y61b-q8BUuPDxTLN0kDsPOdxOl3AFpjKFomNDhSGoOiQo5pAJ2KqUvsF2X_9n54nfZVWdCQ-Eyry74Wf_ax3KudUGww3ogC8oS_vG18tS4Dl5IKYxXwzIybWnQdUp3iFyLV9--5FzTMXJ26BRVsyP3TQUJAtMus-rD3lhcoGkejOo1Y0IyfpSgzmTvMT1mfxLvajs2gSYlKFLXNTWOWDN_jtitb7u15knuvClRWkvvnOaV-GLEIxeYkbhyP2-aji2wrdBbwkiZt4JYPArxYwyvwzrpZvRpYCzo1i5ysI",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "text/html": {
+                "example": {
+                  "value": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n         \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>404 - Not Found</title>\n</head>\n<body>\n<h1>404 - Not Found</h1>\n<script type=\"text/javascript\" src=\"//wpc.75674.betacdn.net/0075674/www/ec_tpm_bcon.js\"></script>\n</body>\n</html>\n"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "presence-created",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "presence_type": {
+                    "type": "string",
+                    "example": "0"
+                  },
+                  "latitude": {
+                    "type": "string",
+                    "example": "12121321"
+                  },
+                  "longitude": {
+                    "type": "string",
+                    "example": "121212"
+                  },
+                  "location_details": {
+                    "type": "string",
+                    "example": "Patrang"
+                  },
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  }
+                }
+              },
+              "example": "file=&latitude=12121321&location_details=Patrang&longitude=121212&presence_type=0"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/presences/events/created/"
+      }
+    },
+    "/i/v1/signin": {
+      "post": {
+        "tags": [],
+        "summary": "Signin",
+        "description": "Signin",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer ",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "integer",
+                          "format": "int64",
+                          "example": 200
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "success"
+                        },
+                        "message": {
+                          "type": "string",
+                          "example": "success"
+                        }
+                      }
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "access_token": {
+                          "type": "string",
+                          "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1ZjU4MjhmMzRkY2I4NDllNWQ3YmYxNmMwY2U1OGMyMDQwYjYwZmUwNWQwM2U0ZmI4MDQ4ZTcyNTMyMWQwZjViNTNiNDU0ZDUwOTUxNWQ2MyIsImlhdCI6MTY4MTA1MDA2OC4xNTk0MDgwOTI0OTg3NzkyOTY4NzUsIm5iZiI6MTY4MTA1MDA2OC4xNTk0MTQwNTI5NjMyNTY4MzU5Mzc1LCJleHAiOjE3MTI2NzI0NjguMTQ4OTE2OTU5NzYyNTczMjQyMTg3NSwic3ViIjoiNDAwIiwic2NvcGVzIjpbXX0.Pm1iORUr8A9vPkgx0zyqScCmSGfSDZow_ATpzVSkQX7eM7xNHkN7kWv3L-_0OzkuVbeB-XPb8eRpizq4DuO06pE74PzBPIbBPPSzO9Iq3akgqjrxjkDD8sIVzrjuF7w8q4sTCcS4mrv6nRpV6U5BcjZCB7_J-7auzm6N_zAy_B1AvgxKVIy0k-1oDMZkW_rEl-Rk08_zi2EYFpx-zho_QnX6l8CC-fya7oLGi5MPjKa03GUorgmGqaUBNfnLECTBwQ6eOSM9mEoVJRZU-akJQupOaL1TS_NpmM0yaRFUat8mH0tOoOyre2MhSxtAYg6wnWuGWAUJxtQX4hPIOzbJ3ZNpwj0_vk4I5ofXn7liw0oKAW4s5kiw6iyWRMX1Zz92GuOFCG5szHmcFUjhBzq_lFlPm_8uyysDq2TiPHhZc7B1GPBzNE68v_dPWfdG7K0xmgTjd2F3a3NECUi0wYQepLCJS45tGpdoGSilGd12IafdZFq_Fus6vDk8T4C0BIey4ySEn12NL3PgEf3xRYy98aoFYFBPhgtY56sbXcwgd08fInK1XA_BINextx-uXFPA49O_SjdQrw5gNHa0WzpKtLFC78UmAbq__6eWATOYnoNwH5tzBtiG6kVG0AP3mcSIm7nJ9FlrWZDPfoHL4rthRIidkWPlA0zNwmvLIRdpocs"
+                        },
+                        "token_type": {
+                          "type": "string",
+                          "example": "Bearer"
+                        },
+                        "codePDF": {
+                          "type": "string",
+                          "example": "NzllS0I1ZGtZbE1QZitNdHJyVW5aQT09"
+                        },
+                        "user": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer",
+                              "format": "int64",
+                              "example": 400
+                            },
+                            "nip": {
+                              "type": "string",
+                              "example": "199711102023021001"
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "Karyawan Tetap"
+                            },
+                            "id_card": {
+                              "type": "string",
+                              "example": "12345678910"
+                            },
+                            "name": {
+                              "type": "string",
+                              "example": "Yusfi Adil"
+                            },
+                            "employee_type": {
+                              "type": "null"
+                            },
+                            "birthplace": {
+                              "type": "string",
+                              "example": "Jember"
+                            },
+                            "birthday": {
+                              "type": "string",
+                              "example": "1997-11-10"
+                            },
+                            "gender": {
+                              "type": "string",
+                              "example": "L"
+                            },
+                            "religion_id": {
+                              "type": "integer",
+                              "format": "int64",
+                              "example": 1
+                            },
+                            "address": {
+                              "type": "string",
+                              "example": "Los Angeles"
+                            },
+                            "phone": {
+                              "type": "string",
+                              "example": "082257844809"
+                            },
+                            "email": {
+                              "type": "string",
+                              "example": "test@gmail.com"
+                            },
+                            "photo": {
+                              "type": "string",
+                              "example": "https://api-staging-like.mascitra.co.id/api/v1/admin/staff/photo/PHOTO-199711102023021001.png"
+                            },
+                            "signature": {
+                              "type": "null"
+                            },
+                            "role": {
+                              "type": "string",
+                              "example": "PG"
+                            },
+                            "status": {
+                              "type": "string",
+                              "example": "A"
+                            },
+                            "id_bpjs": {
+                              "type": "null"
+                            },
+                            "npwp": {
+                              "type": "null"
+                            },
+                            "marital_status": {
+                              "type": "string",
+                              "example": "SINGLE"
+                            },
+                            "blood_type": {
+                              "type": "null"
+                            },
+                            "height": {
+                              "type": "null"
+                            },
+                            "weight": {
+                              "type": "null"
+                            },
+                            "hair": {
+                              "type": "null"
+                            },
+                            "face_shape": {
+                              "type": "null"
+                            },
+                            "color": {
+                              "type": "null"
+                            },
+                            "thew": {
+                              "type": "null"
+                            },
+                            "disability": {
+                              "type": "null"
+                            },
+                            "hobby": {
+                              "type": "string",
+                              "example": "Mancing"
+                            },
+                            "appointment": {
+                              "type": "null"
+                            },
+                            "tenure_year": {
+                              "type": "null"
+                            },
+                            "tenure_month": {
+                              "type": "null"
+                            },
+                            "work_start": {
+                              "type": "string",
+                              "example": "2023-02-23"
+                            },
+                            "pension_age": {
+                              "type": "integer",
+                              "format": "int64",
+                              "example": 56
+                            },
+                            "information": {
+                              "type": "null"
+                            },
+                            "created_at": {
+                              "type": "string",
+                              "example": "2020-06-19T04:52:56.000000Z"
+                            },
+                            "updated_at": {
+                              "type": "string",
+                              "example": "2023-04-06T01:54:35.000000Z"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {
+              "access-control-allow-origin": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "cache-control": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "no-cache, private"
+                }
+              },
+              "connection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "content-type": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              },
+              "date": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Sun, 09 Apr 2023 14:21:08 GMT"
+                }
+              },
+              "strict-transport-security": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains; preload"
+                }
+              },
+              "transfer-encoding": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              },
+              "vary": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Accept-Encoding"
+                }
+              },
+              "x-content-type-options": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "x-ratelimit-limit": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "60"
+                }
+              },
+              "x-ratelimit-remaining": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "58"
+                }
+              },
+              "x-server-powered-by": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Engintron"
+                }
+              },
+              "x-xss-protection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "1; mode=block"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "Signin",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "test@gmail.com"
+                  },
+                  "device_token": {
+                    "type": "string",
+                    "example": "ajajiehehhqehqheqpou98wr"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "123"
+                  }
+                }
+              },
+              "example": "device_token=ajajiehehhqehqheqpou98wr&email=test@gmail.com&password=123"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/signin"
+      }
+    },
+    "/i/v1/account/change_password": {
+      "post": {
+        "tags": [],
+        "summary": "Change Password",
+        "description": "account",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI3ZDBkY2I5ZTA2NjdlZDg0MDNmYzk2NzI3OWZjMzI5M2M0M2E5M2M2MWU2Njk3NmQzMDIwOTA3MmVkYTQzNTA0MDkxYTI3YWY5ZGNmMGQ2OSIsImlhdCI6MTY4MTA2NDM1Ni4wNjk4MjA4ODA4ODk4OTI1NzgxMjUsIm5iZiI6MTY4MTA2NDM1Ni4wNjk4MjQ5MzQwMDU3MzczMDQ2ODc1LCJleHAiOjE3MTI2ODY3NTYuMDY2NTA0OTU1MjkxNzQ4MDQ2ODc1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.abIOwpCNAYSyPIQVFxOK5z-RcweVbKh08X7pdEnGoiGQxsFbYZfVl3UUWTIi3cEysQfOVBXY5OA16wGkhNknXWo4HUwY79J9H6jFShNVQ8bjS5zEMdTf2_7SaE_Fd_igxs5lRl0-2bmmslcJPuUDFG5Wb6T4Akv3zGt0-20GrYkEdaanVXubbrcI_UISyf2NkpdZlEccoLu3y72qphuib6sLe8gASo1KV-HWHPhe8hJsb5PWAgNOcad3OY2m4nZfbnSE6wxOCvQUTH6OPauAnWMbLL3f8daFoYYBY4doBKNUgaNurnoPX8s3bIbgJ2hu_pltWO8mLCTEnyLAw_2Hqnlub5mUV3v61vtx6KEV_aenI1qgs7gux3mCyp7ceDClZLA6prZv5MgZNKsjXHP5W6V_CpXgpbiZ9SHUFck43_vs62kk5JFoCVk07Cn5jRjx3iYLiGmS-n8JeG6BuKkNVAQPrnmbrCJ7z1oKjEU9TPAyHoxJCDO-b4VhkeBO5w5aMbBr125tGKn5m-BrqrEksPQEGwnmyJhXPeIeBoRmBzLCO7F-kcna5FL8mCEUz8P0hvZr_cChFQm5sgkJJb-UaCHRIsIm3O6Q6Vddgopi1mzWRyC_ZkGtMkngdkIRc3AnZyAEFSOL6XjHbEdsIGbpdEnyUzKRjVGpNIzaEBMAKKM",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "integer",
+                          "format": "int64",
+                          "example": 400
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "error"
+                        },
+                        "message": {
+                          "type": "string",
+                          "example": "validation input"
+                        }
+                      }
+                    },
+                    "data": {
+                      "type": "object",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "current_password": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {
+              "access-control-allow-origin": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "cache-control": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "no-cache, private"
+                }
+              },
+              "connection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "content-type": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              },
+              "date": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Wed, 05 Apr 2023 07:42:21 GMT"
+                }
+              },
+              "strict-transport-security": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains; preload"
+                }
+              },
+              "transfer-encoding": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              },
+              "x-content-type-options": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "x-ratelimit-limit": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "60"
+                }
+              },
+              "x-ratelimit-remaining": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "58"
+                }
+              },
+              "x-xss-protection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "1; mode=block"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "account",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "current_password": {
+                    "type": "string",
+                    "example": "1234"
+                  },
+                  "new_password": {
+                    "type": "string",
+                    "example": "mascitra"
+                  },
+                  "new_confirm_password": {
+                    "type": "string",
+                    "example": "mascitra"
+                  }
+                }
+              },
+              "example": "current_password=1234&new_confirm_password=mascitra&new_password=mascitra"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/account/change_password"
+      }
+    },
+    "/i/v1/permits/events/created": {
+      "post": {
+        "tags": [],
+        "summary": "permit-created",
+        "description": "permit-created",
+        "parameters": [
+          {
+            "name": "X-RapidAPI-Key",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "f70233e3d3msh775c799e5c3d4cfp1c9a48jsnbe75b59d112a",
+              "description": ""
+            }
+          },
+          {
+            "name": "X-RapidAPI-Host",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODc2N2FlZC0wYzY1LTQ4NmYtYmQ3ZS03ZTM4ODBhYzEwY2YiLCJqdGkiOiI1YTAzNzY4MGM0NmViNDdjOTRiMzMwNDQyNTc4Yjg3Zjc0YjhiMTYwMjMyMjIyYmMwZTEyYWU1Yjc2NGViYjA5YjA3YTVhYzc4MGFjZTg5OSIsImlhdCI6MTY3ODA5NjI2Mi40ODg4MTE5Njk3NTcwODAwNzgxMjUsIm5iZiI6MTY3ODA5NjI2Mi40ODg4MTYwMjI4NzI5MjQ4MDQ2ODc1LCJleHAiOjE3MDk3MTg2NjIuNDg2NjcxOTI0NTkxMDY0NDUzMTI1LCJzdWIiOiI0MDAiLCJzY29wZXMiOltdfQ.lWyRrky20ZM037N7pmjY_WIDZ90y9eCM6nv8ge3pG7k6Ypc3wIAsoGZhWT4TfpchsQLWIGUKJB4SuVHrPk3zAFwPZHkRtsqoYqJ-nU3vLz2Tgx2uPQmfYwGhmSItaJl2XWKiJVNGPfUSPIdBKxZ4smTPV1lgbRLxbvYDJDYAdsic39ts0KWBsLfcxFrGUw-vB0d7vBH-E0pxW8GlvhRnU0nSzI6__Gi6om6IOlNGyDUA158c6AE9MSGpQalCv99XR3nhgveN1dOJuTU0Zy-2LcOBEsVhSUbrzL35J8zqvshNkGPVpqBkrnHGDoTb6iOp9LaKRRjid_j99mFVN-p8iuMZlvkiySLpI9tc-kr-yDpae_c-CRgZbiAJvod2Wly31nrA3L_HbKcS3IEFHadZtEkPV_fnQgJL3zEmV5wvVT3a_fX7bpwG2dv947y1F6OW49b6UGK7n7UF2LUQUdmHsVMpbGT5niGxC-qqflztKg4AI6tXlqpHkl2QQThHgpyQo2dfrUbrQJnSdrXF48j9TYZ3RfN4aDaCKnTby_a7isUUoIuSgUKBU04azQTWbh7LN6Vx6TCqMtfBb0WImWD7R3p4OzApat_yOTyDHx7T5KcbPyCsYPhogWh-bKkGyJv0CelMkDfpZjvCFmcwCsOEk1-iL_kqSHjPOnI3yy2jeI8",
+              "description": ""
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "multipart/form-data",
+              "description": ""
+            }
+          },
+          {
+            "name": "",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          },
+          {
+            "name": "",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "description": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "integer",
+                          "format": "int64",
+                          "example": 400
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "error"
+                        },
+                        "message": {
+                          "type": "object"
+                        }
+                      }
+                    },
+                    "data": {
+                      "type": "string",
+                      "example": []
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {
+              "access-control-allow-origin": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "cache-control": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "no-cache, private"
+                }
+              },
+              "connection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "content-type": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              },
+              "date": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "Mon, 06 Mar 2023 10:32:05 GMT"
+                }
+              },
+              "strict-transport-security": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "max-age=31536000; includeSubDomains; preload"
+                }
+              },
+              "transfer-encoding": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "chunked"
+                }
+              },
+              "x-content-type-options": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "nosniff"
+                }
+              },
+              "x-ratelimit-limit": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "60"
+                }
+              },
+              "x-ratelimit-remaining": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "57"
+                }
+              },
+              "x-xss-protection": {
+                "description": "",
+                "schema": {
+                  "type": "string",
+                  "example": "1; mode=block"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "description": "permit-created",
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "description": {
+                    "type": "string",
+                    "example": "coba"
+                  },
+                  "end_date": {
+                    "type": "string",
+                    "example": "2023-03-16"
+                  },
+                  "start_date": {
+                    "type": "string",
+                    "example": "2023-03-20"
+                  },
+                  "type": {
+                    "type": "string",
+                    "example": "P1"
+                  },
+                  "file": {
+                    "type": "string",
+                    "example": ""
+                  },
+                  "necessity": {
+                    "type": "string",
+                    "example": "cuti tahunan"
+                  }
+                }
+              },
+              "example": "description=coba&end_date=2023-03-16&file=&necessity=cuti tahunan&start_date=2023-03-20&type=P1"
+            }
+          },
+          "required": true
+        },
+        "operationId": "/i/v1/permits/events/created"
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "oauth2_auth": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "",
+            "scopes": {
+              "": "scope description"
+            }
+          }
+        }
+      }
+    }
+  }
+}
